@@ -1,0 +1,377 @@
+/* fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,400;1,300;1,400;1,900&display=swap');
+/* variables */
+:root{
+    --bg-body: #1f212c;
+    --prymari-color: #2c5bff;
+    --font-title: 40px;
+    --font-parrafos:20px;
+}
+h1,h2,h3,h4,h5,h6{
+font-family: 'Montserrat',sans-serif;
+}
+p,a,li,td,input,label{
+    font-family: 'Work Sans',sans-serif;
+}
+body{
+    background: var(--bg-body);
+}
+header{
+    padding-top: 40px;
+}
+nav.bg-gym{
+    background-color: var(--bg-body);
+}
+nav .navbar-brand img{
+    width: 200px;
+}
+nav.bg-gym ul li a{
+    color: #ffff;
+    position: relative;
+    font-size: 20px;
+    margin: 0 12px;
+}
+nav.bg-gym ul li{
+    margin-top: 14px ;
+}
+nav.bg-gym ul li a::after{
+    width: 0;
+    height: 2px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    transition: .4s;
+}
+nav.bg-gym ul li a:hover{
+    color: var(--prymari-color);
+}
+nav.bg-gym ul li a:hover::after{
+    background: #2c5bff;
+    width: 40%;
+}
+nav.bg-gym ul li.login{
+    margin-left: 400px;
+    margin-right: 20px;
+}
+nav.bg-gym ul li.registro a{
+    display: block;
+    padding: 12px 30px !important;
+    color: #ffff;
+    background: #2c5bff;
+    border-radius: 4px;
+    
+}
+/* hero */
+#hero{
+    padding: 140px 0;
+}
+#hero .cont-foto {
+position: relative;
+width: 400px;
+}
+#hero .cont-foto img{
+    z-index: 2;
+    position: relative;
+    width: 400px;
+}
+#hero .cont-foto::before{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top:-40px;
+    left: 40px;
+    background: var(--prymari-color);
+}
+#hero .cont-info{
+    padding-left: 60px;
+
+}
+#hero .cont-info h1{
+    color: #ffff;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#hero .cont-info h1 span{
+    border-bottom: 12px solid #ffff;
+}
+#hero .cont-info p{
+    color: #ffff;
+    font-size: var(--font-parrafos);
+    margin-bottom: 60px;
+
+}
+#hero .cont-info .destacados h2{
+    color: #ffff;
+    font-size: var(--font-title);
+}
+#hero .cont-info .destacados p{
+    font-size: 14px;
+}
+/* servicios */
+#servicios{
+    width: 100%;
+    position: relative;
+    padding: 40px 0 100px;
+    text-align: center;
+}
+#servicios h2{
+    color: #ffff;
+    font-size: var(--font-title);
+    font-weight: 700;
+
+}
+#servicios p{
+    color: #fff;
+    font-size: var(--font-parrafos);
+}
+#servicios .row{
+padding-top: 70px;
+}
+#servicios .card-services{
+    background: #292c36;
+    border-radius: 4px;
+    position: relative;
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    text-align: left;
+    transition: .4s;
+    max-width: 280px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+#servicios .card-services:hover{
+    background: #2c5bff;
+}
+#servicios .card-services img{
+    background: #fff;
+    width: 70px;
+    padding: 15px;
+    border-radius: 4px;
+    position: absolute;
+    top: -20px;
+    left: 30px;
+}
+#servicios .card-services h3{
+    text-align: right;
+    color: #fff;
+    font-size: var(--font-title);
+    margin-bottom: 20px;
+}
+#servicios .card-services h4{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+#servicios .card-services p{
+    font-size: 15px;
+    color: #fff;
+    text-align: left;
+    line-height: 30px;
+    margin-left: 15px;
+}
+#servicios .card-services a{
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    font-size: 15px;
+    text-decoration: none;
+    border-bottom: 2px solid;
+}
+/* clases */
+#cddestacadas{
+    width: 100%;
+    position: relative;
+    text-align: left;
+    padding: 70px 0 100px;
+}
+#cdestacadas h2{
+    font-size: var(--font-title);
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+}
+#cdestacadas h2::after{
+    width: 70%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 52%;
+}
+#cdestacadas .card-destacadas{
+    background: #292c36;
+    border-radius: 4px;
+    position: relative;
+}
+#cdestacadas .card-destacadas .cont-info:hover{
+    background: #2c5bff;
+}
+#cdestacadas .card-destacadas img{
+    width: 100%;
+    border-radius: 4px 4px;
+}
+#cdestacadas .card-destacadas  .cont-info{
+    background: #292c36;
+    padding: 14px;
+    border-radius: 0 0 4px 4px;
+}
+.card-destacadas  .cont-info h3{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+}
+.card-destacadas  .cont-info p{
+    color: #fff;
+    font-size: 16px;
+}
+#planes{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 40px 0 100px;
+}
+#planes h2{
+    color: #fff;
+    font-size: var(--font-title);
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+#planes p{
+    font-size: var(--font-parrafos);
+    color: #fff;
+}
+#planes .lapso{
+    background: #292c36;
+    margin-top: 50px;
+    padding: 50px 70px;
+    border-radius: 20px;
+    text-align: left;
+}
+#planes .lapso ul{
+    border: 0 transparent;
+    margin-bottom: 50px;
+    background: #3f434f;
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 30px;
+}
+#planes .lapso ul li button{
+    background: transparent;
+    color:#fff ;
+    border-radius: 20px;
+    width: 120px;
+    border: 0 transparent;
+}
+#planes .lapso ul li button.active{
+    background: #2c5bff;
+}
+#planes .lapso p{
+    margin-bottom: 40px;
+    position: relative;
+}
+#planes .lapso p::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 10px;
+    right: 0;
+    top: 10px;
+}
+#planes .plan{
+    background: transparent;
+    padding-top: 50px;
+
+}
+#planes .plan .accordion{
+    background: transparent;
+}
+#planes .plan .accordion-item{
+    background: transparent;
+    border-radius: 20px;
+    margin: 40px;
+    border: 1px solid #fff;
+}
+#planes .plan .accordion-item button{
+    background: transparent;
+}
+#planes .plan h2{
+    margin: 0;
+    padding: 0;
+    
+    color: #fff;
+
+}
+#planes .plan .accordion-item button{
+    color: #fff;
+    box-shadow: 0 0 0 0 transparent;
+    
+}
+#planes .plan .accordion-item .accordion-body{
+    color: #fff;
+    font-size: var(--font-parrafos);
+}
+/* comentarios */
+#comentarios{
+    text-align: center;
+    width: 1005;
+    position: relative;
+    padding: 40px 0 100px;
+    color: #fff;
+}
+#comentarios .carousel-item{
+    background-color: #2c5bff;
+    padding: 120px 40px ;
+    border-radius: 20px;
+}
+#comentarios .carousel-item h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+footer{
+    padding: 30px;
+    background: #292c36;
+    color: #fff;
+    text-align: center;
+
+}
+footer img{
+    width: 220px;
+}
+@media screen and (min-width:320px) and (max-width:920px) {
+    header nav button.navbar-toggler{
+        background-color: #2c5bff;
+    }
+    nav.bg-gym ul li.login{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    nav.bg-gym ul li.registro a{
+        display: inline-block;
+
+    }
+    #hero{
+        text-align: center;
+    }
+    #hero .cont-foto {
+        width: 100%;
+    }
+    #hero .cont-foto::before{
+        left: 0;
+    }
+    #cdestacadas h2::after{
+        width: 25%;
+    }
+}
